@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
         # department_2 = QTreeWidgetItem(tree)
         # department_2.setText(0, 'Marketing')
         # department_3 = QTreeWidgetItem(tree)
-        # department_3.setText(0, 'HR')
+        # department_3.setText(0, 'HR').
         #
         # leader_1 = QTreeWidgetItem()
         # leader_1.setText(0, 'John')
