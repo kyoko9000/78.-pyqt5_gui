@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.treeWidget = QtWidgets.QTreeWidget(self.centralwidget)
-        self.treeWidget.setGeometry(QtCore.QRect(20, 10, 241, 401))
+        self.treeWidget.setGeometry(QtCore.QRect(20, 10, 160, 300))
         self.treeWidget.setObjectName("treeWidget")
         MainWindow.setCentralWidget(self.centralwidget)
 
