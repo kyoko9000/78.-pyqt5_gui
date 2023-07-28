@@ -28,6 +28,78 @@
       <string>tree view</string>
      </property>
     </column>
+    <item>
+     <property name="text">
+      <string>New Item 1</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>3.jpg</normaloff>3.jpg</iconset>
+     </property>
+     <item>
+      <property name="text">
+       <string>New Subitem 11</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>4.jpg</normaloff>4.jpg</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item 12</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>4.jpg</normaloff>4.jpg</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item 13</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>4.jpg</normaloff>4.jpg</iconset>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>New Item 2</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>3.jpg</normaloff>3.jpg</iconset>
+     </property>
+     <item>
+      <property name="text">
+       <string>New Subitem 21</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>4.jpg</normaloff>4.jpg</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>New Item 22</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>4.jpg</normaloff>4.jpg</iconset>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>New Item 3</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>3.jpg</normaloff>3.jpg</iconset>
+     </property>
+    </item>
    </widget>
   </widget>
  </widget>

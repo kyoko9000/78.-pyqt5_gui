@@ -10,21 +10,21 @@ class MainWindow(QMainWindow):
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
 
-        departments = ['Sales', 'Marketing', 'HR']
-        employees = {
-            'Sales': ['John', 'Jane', 'Peter'],
-            'Marketing': ['Alice', 'Bob'],
-            'HR': ['David'],
-        }
-
-        for department in departments:
-            department_item = QTreeWidgetItem(self.uic.treeWidget)
-            department_item.setText(0, department)
-            # set the children
-            for employee in employees[department]:
-                employee_item = QTreeWidgetItem()
-                employee_item.setText(0, employee)
-                department_item.addChild(employee_item)
+        # departments = ['Sales', 'Marketing', 'HR']
+        # employees = {
+        #     'Sales': ['John', 'Jane', 'Peter'],
+        #     'Marketing': ['Alice', 'Bob'],
+        #     'HR': ['David'],
+        # }
+        #
+        # for department in departments:
+        #     department_item = QTreeWidgetItem(self.uic.treeWidget)
+        #     department_item.setText(0, department)
+        #     # set the children
+        #     for employee in employees[department]:
+        #         employee_item = QTreeWidgetItem()
+        #         employee_item.setText(0, employee)
+        #         department_item.addChild(employee_item)
 
         # department_1 = QTreeWidgetItem(tree)
         # department_1.setText(0, 'Sales')
@@ -46,6 +46,13 @@ class MainWindow(QMainWindow):
         # worker_2 = QTreeWidgetItem()
         # worker_2.setText(0, 'jerry')
         # leader_1.addChild(worker_2)
+
+        self.uic.treeWidget.itemClicked.connect(self.show_signal)
+
+    def show_signal(self, x, col):
+        print(x.text(col), col)
+        if x.text(col) == "New Subitem 11":
+            print("New Subitem 11 do something")
 
 
 if __name__ == "__main__":
