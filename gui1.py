@@ -14,11 +14,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(501, 421)
+        MainWindow.resize(365, 474)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.treeWidget = QtWidgets.QTreeWidget(self.centralwidget)
-        self.treeWidget.setGeometry(QtCore.QRect(30, 20, 211, 381))
+        self.treeWidget.setGeometry(QtCore.QRect(10, 10, 231, 451))
         self.treeWidget.setObjectName("treeWidget")
         MainWindow.setCentralWidget(self.centralwidget)
 

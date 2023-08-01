@@ -1,7 +1,7 @@
 import sys
 
 from PyQt5 import QtGui
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTreeWidget, QTreeWidgetItem
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem
 from gui1 import Ui_MainWindow
 
 
@@ -19,6 +19,7 @@ class MainWindow(QMainWindow):
         # department_3.setText(0, 'HR')
         # icon = QtGui.QIcon()
         # icon.addPixmap(QtGui.QPixmap("3.jpg"))
+        # department_2.setIcon(0, icon)
         # department_3.setIcon(0, icon)
         #
         # leader_1 = QTreeWidgetItem()
@@ -63,7 +64,7 @@ class MainWindow(QMainWindow):
 
     def show_signal(self, x, col):
         print(x.text(col), col)
-        if x.text(col) == "John":
+        if x.text(col) == "a":
             print(f"{x.text(col)} do something")
 
 
