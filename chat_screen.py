@@ -6,7 +6,7 @@ from PyQt5.QtCore import QSize
 # pip install pyqt5
 from PyQt5.QtWidgets import QApplication, QMainWindow, QListWidgetItem
 from gui2 import Ui_MainWindow
-from screen_1 import add_screen_1, add_screen_2
+from items import add_screen_1, add_screen_2
 
 
 class MainWindow(QMainWindow):
@@ -22,6 +22,7 @@ class MainWindow(QMainWindow):
         newitem = QListWidgetItem()
         newitem.setSizeHint(QSize(0, 60))
         centralwidget = add_screen_1(text)
+
         self.uic.listWidget.addItem(newitem)
         self.uic.listWidget.setItemWidget(newitem, centralwidget)
         self.uic.listWidget.scrollToBottom()
@@ -30,7 +31,6 @@ class MainWindow(QMainWindow):
         text = self.uic.textEdit.toPlainText()
         newitem = QListWidgetItem()
         newitem.setSizeHint(QSize(0, 60))
-
         centralwidget = add_screen_2(text)
 
         self.uic.listWidget.addItem(newitem)
