@@ -24,9 +24,9 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setMaximumSize(QtCore.QSize(100, 100))
         self.label.setStyleSheet("QLabel{\n"
-"border-image: url(\'D:/9. python project/78. pyqt5_gui/1.jpg\');\n"
-"border-radius: 50px;\n"
-"}")
+                                 "border-image: url(\'D:/9. python project/78. pyqt5_gui/1.jpg\');\n"
+                                 "border-radius: 50px;\n"
+                                 "}")
         self.label.setText("")
         self.label.setObjectName("label")
         self.horizontalLayout.addWidget(self.label)
@@ -55,6 +55,7 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
