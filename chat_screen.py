@@ -1,7 +1,6 @@
 # ************************** man hinh loai 2 *************************
 import sys
 
-from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtCore import QSize
 # pip install pyqt5
 from PyQt5.QtWidgets import QApplication, QMainWindow, QListWidgetItem
