@@ -42,7 +42,7 @@ def add_screen_1(text):
 
 def add_screen_2(text):
     centralwidget = QtWidgets.QWidget()
-    centralwidget.setObjectName("centralwidget1")
+    centralwidget.setObjectName("centralwidget")
     horizontalLayout = QtWidgets.QHBoxLayout(centralwidget)
     horizontalLayout.setContentsMargins(0, 0, 0, 0)
     horizontalLayout.setSpacing(0)
