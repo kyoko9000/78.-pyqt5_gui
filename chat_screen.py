@@ -106,7 +106,7 @@ class MainWindow(QMainWindow):
         item = add_screen_2(text)
         self.uic.listWidget.addItem(baseitem)
         self.uic.listWidget.setItemWidget(baseitem, item)
-        self.uic.listWidget.scrollToBottom().
+        self.uic.listWidget.scrollToBottom()
 
 
 if __name__ == "__main__":
