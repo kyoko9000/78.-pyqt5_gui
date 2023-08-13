@@ -1,4 +1,3 @@
-# ************************** man hinh loai 2 *************************
 import sys
 
 from PyQt5 import QtWidgets, QtCore
@@ -21,7 +20,7 @@ def add_screen_1(text):
                         "border-image: url(\'1.jpg\');\n"
                         "border-radius: 25px;\n"
                         "}")
-    label.setText("hello \n toi van khoe")
+    label.setText("")
     label.setObjectName("label")
     horizontalLayout.addWidget(label)
     frame_2 = QtWidgets.QFrame(centralwidget)
@@ -60,7 +59,7 @@ def add_screen_2(text):
     frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
     frame_2.setObjectName("frame_2")
     horizontalLayout_3 = QtWidgets.QHBoxLayout(frame_2)
-    horizontalLayout_3.setContentsMargins(40, 0, 0, 0)
+    horizontalLayout_3.setContentsMargins(0, 0, 40, 0)
     horizontalLayout_3.setSpacing(0)
     horizontalLayout_3.setObjectName("horizontalLayout_3")
     label_2 = QtWidgets.QLabel(frame_2)
@@ -93,8 +92,8 @@ class MainWindow(QMainWindow):
         text = self.uic.textEdit.toPlainText()
         baseitem = QListWidgetItem()
         baseitem.setSizeHint(QSize(0, 60))
-        item = add_screen_1(text)
 
+        item = add_screen_1(text)
         self.uic.listWidget.addItem(baseitem)
         self.uic.listWidget.setItemWidget(baseitem, item)
         self.uic.listWidget.scrollToBottom()
@@ -103,8 +102,8 @@ class MainWindow(QMainWindow):
         text = self.uic.textEdit.toPlainText()
         baseitem = QListWidgetItem()
         baseitem.setSizeHint(QSize(0, 60))
-        item = add_screen_2(text)
 
+        item = add_screen_2(text)
         self.uic.listWidget.addItem(baseitem)
         self.uic.listWidget.setItemWidget(baseitem, item)
         self.uic.listWidget.scrollToBottom()
