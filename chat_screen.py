@@ -91,22 +91,22 @@ class MainWindow(QMainWindow):
 
     def me(self):
         text = self.uic.textEdit.toPlainText()
-        newitem = QListWidgetItem()
-        newitem.setSizeHint(QSize(0, 60))
-        centralwidget = add_screen_1(text)
+        baseitem = QListWidgetItem()
+        baseitem.setSizeHint(QSize(0, 60))
+        item = add_screen_1(text)
 
-        self.uic.listWidget.addItem(newitem)
-        self.uic.listWidget.setItemWidget(newitem, centralwidget)
+        self.uic.listWidget.addItem(baseitem)
+        self.uic.listWidget.setItemWidget(baseitem, item)
         self.uic.listWidget.scrollToBottom()
 
     def other(self):
         text = self.uic.textEdit.toPlainText()
-        newitem = QListWidgetItem()
-        newitem.setSizeHint(QSize(0, 60))
-        centralwidget = add_screen_2(text)
+        baseitem = QListWidgetItem()
+        baseitem.setSizeHint(QSize(0, 60))
+        item = add_screen_2(text)
 
-        self.uic.listWidget.addItem(newitem)
-        self.uic.listWidget.setItemWidget(newitem, centralwidget)
+        self.uic.listWidget.addItem(baseitem)
+        self.uic.listWidget.setItemWidget(baseitem, item)
         self.uic.listWidget.scrollToBottom()
 
 
